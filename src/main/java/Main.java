@@ -23,6 +23,8 @@ public class Main extends Application {
             stage.setTitle("Duke");
             stage.setMinHeight(220);
             stage.setMinWidth(417);
+            stage.getIcons().add(new javafx.scene.image.Image(
+                    this.getClass().getResourceAsStream("/images/DaDuke.png")));
             fxmlLoader.<MainWindow>getController().setDuke(duke);
             stage.show();
         } catch (IOException e) {
